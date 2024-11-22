@@ -1,484 +1,574 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medics Home</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/home.css">
-  <link rel="stylesheet" href="/homestyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage with Layout Selector</title>
+    <link rel="stylesheet" type="text/css" href="Assignements week 4 JS Demo.css">
 </head>
-
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="logotele1.jpg" alt="LOGO"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com" target="_blank">Message Us <i
-                  class="bi bi-facebook"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.twitter.com" target="_blank">Twitter <i
-                  class="bi bi-twitter"></i></a></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:kelanikdas1@gmail.com" target="_blank">Chat Us <i
-                  class="bi bi-envelope-arrow-down-fill"></i></a></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://wa.me/2348140470626" target="_blank">Mail Us <i
-                  class="bi bi-whatsapp"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tel:+2348140470626" target="_blank">Call Us <i
-                  class="bi bi-telephone-fill"></i></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <label class="btn btn-light">Logins and Register</label>
-              </a>
-              <ul class="dropdown-menu" style="margin-left: 50px;">
-                 <li><a class="dropdown-item" href="/patient">Patient Page</a>
-                <li><a class="dropdown-item" href="/doctor">Doctor's Page</a> </li>
-                <li><a class="dropdown-item" href="/admin">Admin Page</a></li>
-                {{!-- <li>
-                  <hr class="dropdown-divider">
-                </li> --}}
-                {{!-- <li><a class="dropdown-item" href="/bookappointment">book AppointMent</a></li> --}}
-              </ul>
-            </li>
-            {{!-- <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li> --}}
-          </ul>
-          {{!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> --}}
+    <header>
+        <div class="container">
+            <h1>Erida Elite Medical Center</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </nav>
-  </div>
+    </header>
 
-  <section class="section-light">
-    <div class="row">
-      <div class="col-lg-6 col-sm-12">
-        <div class="sectblue">
-          <h1 class="mb-5" style="text-align: center;">Good Health Is The Root Of All Happiness</h1>
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Erida Elite Medical Center</h2>
+            <p>Your health, our priority. <br> Enjoy premium medical services from anywhere.</p>
+            <button onclick="window.location.href='#services'">Discover More</button><br><br>
+            <!-- <button onclick="window.open('registration.html', '_blank')">Register</button> -->
+            <button onclick="window.open('login.html', '_blank')">Login</button>
+        </div>
+    </section>
 
-          <div class="sectdet">
-            <div class="row">
-              <div class="col-lg-2 col-md-4 col-sm-4">
-                <h1>123</h1>
-                <h3>Expert Doctors</h3>
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-4">
-                <h1>1234</h1>
-                <h3>Medical Staff</h3>
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-4">
-                <h1>15678</h1>
-                <h3>Total Patients</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-sm-12">
-        <div class="sect2bg">
-          <img src="sect2bg.jpg" alt="" />
-          <h2>CADIOLOGY</h2>
-        </div>
-      </div>
+    <!-- Layout selection buttons -->
+    <div class="toggle-buttons">
+            
     </div>
-  </section>
 
-  <section>
-    <div class="container sectlight">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <img src="sect3img1.jpg" alt="" class="sect3img1">
-          <img src="sect3img2.jpg" alt="" class="sect3img2">
-          <h2 class="sect3h2">ANATOMY</h2>
-
-        </div>
-
-
-        <div class="col-lg-6 col-md-6 col-sm-12 about">
-          <div class="aboutus">
-            <span>
-              <h4>ABOUT US</h4>
-            </span>
-            <h1>Why You Should Trust Us? <br>
-              Get To Know About Us!</h1>
-            <p>You know how sometimes it's hard to get to the doctor's office? Either you're too busy, or
-              it's too far away? That's where Medics comes in. Our website lets you see a doctor
-              from the comfort of your own home. You can browse through our list of available doctors,
-              pick one that fits your needs, and schedule a virtual appointment. Then, at the appointed time,
-              you just hop on a video call with the doctor and discuss your symptoms. They can diagnose you,
-              prescribe medication if needed, and even send over a treatment plan. It's super convenient, secure,
-              and HIPAA-compliant, so you don't have to worry about your personal info. Plus,
-              it's great for people who live far away from good medical care or
-              have mobility issues. We're basically bringing healthcare right to your fingertips!"</p>
-
-            <ul>
-              <li><mark class="circle">&#9989;</mark> Quality Health Care</li>
-              <li>&#9989; Only Qualify Doctor</li>
-              <li>&#9989; Medical Research Professionals</li>
-            </ul>
-            <button class="btnabout">Read More</button>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    </div>
-  </section>
-  <!-- Section 4 of the page starts here -->
-
-  <section>
-    <div class="services">
-      <h3>Services</h3>
-      <h1>Health Care Solutions</h1>
-
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 cardbox">
-
-          <div class="cardimg">
-            <img src="cadiologyimg.jpg" alt="">
-            <h4>Cardiology</h4><br><br>
-            <div class="card-body">
-              Cardiology diagnoses and treats heart and blood vessel disorders.
-              Cardiologists manage conditions like heart failure, coronary artery disease, hypertension,
-              and arrhythmias through tests, medications, and interventions, improving heart health and saving lives.
-
-              <br><br>
-              <button><b style="font-weight: 900;">+</b> Read More</button>
+    <section id="services" class="flex-layout">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Consultations</h3>
+                    <p>Speak with a doctor anytime, anywhere.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Remote Diagnostics</h3>
+                    <p>Advanced technology for remote diagnosis.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Prescriptions</h3>
+                    <p>Receive prescriptions electronically after consultations.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Wellness Programs</h3>
+                    <p>Join programs designed to improve your health.</p>
+                </div>
+                <div class="service-item">
+                    <h3>24/7 Support</h3>
+                    <p>Access help anytime for your health concerns.</p>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-
-        <div class="col-lg-3 col-md-3 col-sm-12 cardbox">
-
-          <div class="cardimg">
-            <img src="pulmonaryimg.png" alt="">
-            <h4>Pulmonary</h4><br><br>
-            <div class="card-body">
-              Pulmonology diagnoses and treats lung and respiratory disorders, such as asthma, COPD,
-              pneumonia, and sleep apnea. Pulmonologists use tests like spirometry and
-              bronchoscopy to manage breathing issues,
-              improve lung function, and enhance patient quality of life.
-              <br><br>
-              <button><b style="font-weight: 900;">+</b> Read More</button>
+    <section id="doctors">
+        <div class="container">
+            <h2>Meet Our Doctors</h2>
+            <div class="doctor-grid">
+                <div class="doctor-card">
+                    <img src="Ericko.jpeg" alt="Doctor 1">
+                    <h3>Dr. Erick Mutugi</h3>
+                    <p>Specialist in Consultations and Internal Medicine</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="jacinta.jpeg" alt="Doctor 2">
+                    <h3>Dr. Jacinta Karimi</h3>
+                    <p>Board-certified cardiologist with a decade of experience in advanced cardiovascular <br>
+                     treatments and patient management, committed to improving heart health outcomes.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="vincent.jpeg" alt="Doctor 3">
+                    <h3>Dr. Kimanthi Vincent</h3>
+                    <p>Skilled pediatrician with 10 years of hands-on experience in child health and wellness, <br>
+                     passionate about delivering patient-centered care and ensuring the optimal development of children at all stages.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Sheila.jpeg" alt="Doctor 4">
+                    <h3>Dr. Sheila Kawira</h3>
+                    <p>Experienced gynecologist with 10 years of expertise in women's reproductive health,<br>
+                    specializing in comprehensive care, including preventive screenings, diagnosis, and treatment of gynecological conditions.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Wairimunurse.jpeg" alt="Nurse 1">
+                    <h3>Dr. Wairimu Irene</h3>
+                    <p>Compassionate nurse with 10 years of clinical experience, specializing in patient care management,<br>
+                     health assessments, and fostering a supportive environment for patients and their families.</p>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-
-        <div class="col-lg-3 col-md-3 col-sm-12 cardbox">
-          <div class="cardimg">
-            <span><img src="nurologyimg.png" alt="">
-              <h4>Neurology</h4>
-            </span><br><br>
-            <div class="card-body">
-              diagnoses and treats disorders of the brain, spinal cord, and nerves.
-              Neurologists manage conditions like Alzheimer's, Parkinson's, stroke, migraines,
-              and epilepsy through tests, medications, and therapy.
-              We also offer virtual care through teleneurology.
-
-              <br><br>
-              <button><b style="font-weight: 900;">+</b> Read More</button>
+<section id="testimonials">
+        <div class="container">
+            <h2>Feedback from Our Patients: Honest insights into how our care has positively impacted the lives of our patients </h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"I couldn’t have asked for better care. The team was 
+                    incredibly supportive and attentive throughout my entire treatment." - Kiura Muthathai
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        "My experience was outstanding. The professionalism and compassion of the entire team made all the difference in my recovery." - Prof. Salesio M.
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        "I appreciate the thorough and compassionate care provided. The entire team made sure I was informed and comfortable every step of the way." - Jabali Kyle
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        "I’m very pleased with the outcome of my treatment. The team was knowledgeable, and their support made the entire process smooth and stress-free." - Eng. Titus Njuguna
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        "From the moment I walked in, I felt welcomed and cared for. The attention to detail and genuine concern for my well-being were evident throughout." - Anoynomous 
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
 
 
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 cardbox">
+    <section id="contact">
+        <div class="container">
+            <h2>We Welcome Your Inquiries</h2>
+            <p>
+                We'd love to hear from you! Please fill out the form below and we'll get in touch with you shortly.
+            </p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Write your message here"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-          <div class="cardimg">
-            <img src="orthopedics.jpg" alt="">
-            <h4>Orthopedics</h4><br><br>
-            <div class="card-body">
-             Orthopedics diagnoses and treats disorders of the musculoskeletal system, 
-             including bones, joints, and muscles. Orthopedic specialists manage conditions like fractures, 
-             arthritis, osteoporosis, and sports injuries, using surgical and 
-             non-surgical methods to restore mobility and alleviate pain.
-              <br><br>
-              <button><b style="font-weight: 900;">+</b> Read More</button>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Erida Elite Medical Center</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/vinie.tito.1/" target="_blank" aria-label="Facebook">Facebook</a>
+                <a href="https://x.com/parody_vin" target="_blank" aria-label="Twitter">Twitter</a>
+                <a href="https://www.instagram.com/kim._vin/" target="_blank" aria-label="Instagram">Instagram</a>
             </div>
-          </div>
         </div>
+    </footer>
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #004aad;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    background-color: #0067d0;
+}
+
+/* Hero Section */
+#home {
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home .hero h2 {
+    font-size: 2.5em;
+}
+
+#home .hero button {
+    background-color: #0067d0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Doctors section */
+#doctors {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#doctors h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.doctor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.doctor-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+}
+
+.doctor-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-card h3 {
+    margin-top: 15px;
+    color: #f39c12;
+}
+
+/* Testimonials section */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial p::before, .testimonial p::after {
+    content: '"';
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.testimonial p::after {
+    content: '" - ';
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.testimonial p span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
 
 
-        <div class="col-lg-3 col-md-3 col-sm-12 cardbox">
+/* Contact Section */
+#contact {
+    background: url('contact.jpeg') no-repeat center center fixed; 
+    background-size: cover; 
+    color: white; 
+    padding: 60px 20px; 
+    text-align: center;
+}
 
-          <div class="cardimg">
-            <img src="dentalimg.jpg" alt="">
-            <h4>Dental Surgery</h4><br><br>
-            <div class="card-body">
-              Dental surgery treats various oral health issues through surgical procedures.
-              Specialists perform operations like extractions, implants, root canals, and
-              reconstructive surgery to restore oral function,
-              alleviate pain, and enhance smiles.
-              <br><br>
-              <button><b style="font-weight: 900;">+</b> Read More</button>
-            </div>
-          </div>
-        </div>
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
 
-        <div class="col-lg-3 col-md-3 col-sm-12 cardbox">
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 
-          <div class="cardimg">
-            <img src="laboratoryimg.jpg" alt="">
-            <h4>Laboratory</h4><br><br>
-            <div class="card-body">
-              Laboratory medicine diagnoses and monitors diseases through medical testing.
-              Our Lab professionals analyze blood, tissue, and fluid samples to detect conditions
-              like infections, cancer, and genetic disorders,
-              providing crucial information for patient care and treatment.
-              <br><br>
-              <button><b style="font-weight: 900;">+</b> Read More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+#contact form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for form */
+    padding: 20px;
+    border-radius: 8px;
+}
 
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+}
 
-  <section class="sectforcont">
-    <div class="row">
-      <div class="sect4cont"></div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="bgblue">
-          <h3>Features</h3>
-          <h1>Why Choose US?</h1>
-          <p>Medics offers a convenient, accessible, and cost-effective way to receive medical care remotely. 
-            With Medics, patients can consult board-certified physicians from the comfort of their own homes, 
-            reducing travel time and wait periods. Medics also expands access to specialized care, especially 
-            for rural or underserved communities. Additionally, Medics platforms often provide secure and 
-            private online portals for medical history, prescriptions, and test results, streamlining communication 
-            and care coordination. By choosing Medics, patients can enjoy flexibility, efficiency, and enhanced continuity of care, 
-            improving overall health outcomes and quality of life.</p>
-          <div class="listing">
-            <ul>
-              <li><img src="Doctor.png" alt=""></li>
-              <li>Experience
-                <h4>Doctors</h4>
-              </li>
-              <li><img src="mark.png" alt=""></li>
-              <li>Quality
-                <h4>Services</h4>
-              </li>
-            </ul>
-            <ul>
-              <li><img src="first_aid.jpg" alt=""></li>
-              <li>Positive
-                <h4>Consultation</h4>
-              </li>
-              <li><img src="support.png" alt=""></li>
-              <li> 24hours <h4>Support</h4>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-      <div class="col-lg-6 col-md-4 col-sm-12">
-        <div class="futureimg">
-          <img src="featureimg1.jpg" alt="">
-        </div>
-      </div>
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input {
+    height: 40px; /* Set height for text inputs */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button {
+    background-color: #0067d0; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0051a8; /* Darker blue on hover */
+}
 
 
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
 
 
-    </div>
-    </div>
-  </section>
+/* Footer Section */
+footer {
+    background-color: #004aad; /* Dark blue background */
+    color: white; /* White text */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center-align content */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    padding-bottom: 10px; /* Adds space between the copyright and social media */
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center; /* Centers the social media icons */
+    gap: 15px; /* Adds spacing between social media links */
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* Increases font size for visibility */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    background-color: #0067d0; /* Adds hover effect */
+    color: white; /* Ensures text color stays white */
+}
+
+footer .social-media a:active {
+    background-color: #0051a8; /* Active state */
+}
 
 
-  <!-- section 5 of the page -->
-  <section class="sect4">
-    <h2 class="mt-5 mb-4" style="color: white;">Doctor</h2>
-    <h1 class="mb-3">Our Experience Doctors</h1>
-    <div class="doctor">
-      <div class="row">
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-grid, .doctor-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        <div class="card1">
-          <img src="team-3.jpg" alt="">
-          <div class="cardbody">
-            <h5>Barry	Bar	</h5>
-            <h6>Pediatrics</h6>
-          </div>
-
-          <ul>
-            <a href="">
-              <li><img src="facebookicon.png" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="twitter.avif" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="whatsappicon.png" alt=""></li>
-            </a>
-          </ul>
-
-        </div>
-
-        <div class="card1">
-          <img src="team-1.jpg" alt="">
-          <div class="cardbody">
-            <h5>Walter	King	</h5>
-            <h6>Cardiology</h6>
-          </div>
-
-          <ul>
-            <a href="">
-              <li><img src="facebookicon.png" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="twitter.avif" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="whatsappicon.png" alt=""></li>
-            </a>
-          </ul>
-
-        </div>
-
-        <div class="card1">
-          <img src="team-2.jpg" alt="">
-          <div class="cardbody">
-            <h5>Tony	Creed	</h5>
-            <h6>PrimaryCare</h6>
-          </div>
-
-          <ul>
-            <a href="">
-              <li><img src="facebookicon.png" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="twitter.avif" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="whatsappicon.png" alt=""></li>
-            </a>
-          </ul>
-
-        </div>
-
-        <div class="card1">
-          <img src="team-4.jpg" alt="">
-          <div class="cardbody">
-            <h5>Perry	Pardon	</h5>
-            <h6>Surgery</h6>
-          </div>
-
-          <ul>
-            <a href="">
-              <li><img src="facebookicon.png" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="twitter.avif" alt=""></li>
-            </a>
-            <a href="">
-              <li><img src="whatsappicon.png" alt=""></li>
-            </a>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer style="background-color: currentColor;">
-
-
-  </footer>
-
-{{!-- <footer class="mt-5" style="background-color: aquamarine;">
-  <div class="sectfoot">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-12">
-<h3>Address</h3>
-				<ul class="line">
-					<li><b>&#61987;</b> 123 street Gaa Odota</li>
-					<li><b>&#128222;</b> +234-814-047-0626</li>
-					<li><b>&#128231;</b> Info@example.com</li>
-					<ul>
-						<li><a href=""><img src="twitter.avif" alt=""></a></li>
-						<li><a href=""><img src="facebookicon.png" alt=""></a></li>
-						<li><a href=""><img src="whatsappicon.png" alt=""></a></li>
-					</ul>
-				</ul>
-			</div>
-
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<h3>Services</h3>
-				<ul>
-				<li style="font-weight: 900;"><b><b>&#x3E;</b></b>  Cadiology</li>
-				<li style="font-weight: 900;">&#x3E;  Surgery</li>
-				<li style="font-weight: 900;">&#x3E;  Pulmonary</li>
-				<li style="font-weight: 900;">&#x3E;  Neurology</li>
-				<li style="font-weight: 900;">&#x3E;  Orthopedics</li>
-				<li style="font-weight: 900;">&#x3E;  Laboratory</li>
-			</ul>
-			</div>
-
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<h3>Quick Links</h3>
-				<ul>
-					<li>&#x3E;<a href="">  About Us</a></li>
-					<li>&#x3E; <a href=""> Contact Us</a></li>
-					<li>&#x3E; <a href=""> Our Services</a></li>
-					<li>&#x3E; <a href=""> Terms & Condition</a></li>
-					<li>&#x3E; <a href=""> Support</a></li>
-				</ul>
-			</div>
-
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<h3>Newsletter</h3>
-				<h4>Lorem ipsum dolor sit amet consectetur, <br>
-					adipisicing elit. Fuga</h4>
-				<input type="email" placeholder="Email.."> <button type="submit">Sign Up</button>
-			</div>
-		</div>
-	</div>
-</footer> --}}
+    .service-item, .doctor-card {
+        max-width: 100%;
+    }
+}
 
 
 
+/* Layout Selector Section */
+#layout-selector {
+    padding: 50px 0;
+    text-align: center;
+}
 
+#layout-selector button {
+    background-color: #0051a8;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+#layout-selector button:hover {
+    background-color: #003a80;
+}
 
+/* Flexbox Layout */
+.flex-layout .service-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.flex-layout .service-item {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
 
+/* Grid Layout */
+.grid-layout .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
+.grid-layout .service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
-      "></script>
-  <script scr="home.js"></script>
+    </style>
+
 </body>
-
 </html>
