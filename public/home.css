@@ -1,0 +1,51 @@
+body{
+    background: linear-gradient(to right, lightblue, rgb(135, 135, 248));
+}
+
+
+.container-fluid{
+    display: block;
+    width: 100%;
+}
+.navbar-center{
+    padding-left: 12%;
+}
+
+ul li{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.bi-person-circle{
+    font-size: 40px;
+}
+.dash{
+    text-transform: capitalize;
+}
+
+.card{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.card-img-top{
+
+    width: 100px; 
+    display: block; 
+    margin: auto;
+}
+.form-select{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.alert-warning{
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width: 600px){
+    .navbar-center{
+        padding-left: 0;
+    }
+}
